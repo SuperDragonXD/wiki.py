@@ -66,6 +66,8 @@ def addPage(pageName):
           "isLocked": "False"
     }
     writePage(y)
+def add(pageName): # Alias for "addPage"
+  addPage(pageName)
 
 # Edit page code
 def editPage(pageName):
@@ -104,9 +106,12 @@ def viewPage(pageName):
   if pageName != i["wikiPageName"]:
     print(colors.FAIL + "Page doesn't exist.")
 
+def view(pageName): # Alias for "viewPage"
+  viewPage(pageName)
+
 #######################################
 ## THESE ARE NOT MEANT TO BE EDITED. ##
-##   PLEASE DO EDIT ANY OF THESE!!   ##
+## PLEASE DO NOT EDIT ANY OF THESE!! ##
 #######################################
 
 # Special pages
